@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>page title</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header><h1 id="header">Header</h1></header>
+    <section>
+      <nav>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Articles</a></li>
+        </ul>
+      </nav>
+      <div class="container">
+        <article>
+          <div id="article-mg-container"></div>
+
+          <div class="article-container">
+            <h2>Article heading</h2>
+            <p>Paragraph...</p>
+            <a href="https://www.google.com/">More information...</a>
+
+            <div class="form-container">
+                <input type="text" name="firstName" id="first-name">First Name</input><br>
+                <input type="text" name="lastName">Last Name</input><br>
+                <input type="text" name="address">Address</input><br>
+                <button onclick="orderNow()" >Order Now</input><br>
+            </div>
+          </div>
+        </article>
+        <aside id="aside">
+          <h2>Related</h2>
+          <ul>
+            <li><a href="#">Article 1</a></li>
+            <li><a href="#">Article 2</a></li>
+          </ul>
+        </aside>
+      </div>
+    </section>
+    <footer>
+        <p>@copyright 2050 by nobody. all rights reversed</p>
+      </footer>
+    <script>
+      document.getElementById("header").innerText = "Hello JavaScript";
+      document.getElementById("aside").style.backgroundColor = "green";
+      document.getElementById("article-mg-container").innerHTML =
+        '<img height="300px" src="https://imgix.hoyts.com.au/mx/posters/au/the-lord-of-the-rings-the-war-of-the-rohirrim-1274e7e9.jpg" alt="the-war-of-the-rohirrim" />';
+    
+        function orderNow() {
+            var firstName = document.getElementById("first-name").value;
+            alert("Order placed by " + firstName + " !");
+        }
+    
+    </script>
+  </body>
+</html>
