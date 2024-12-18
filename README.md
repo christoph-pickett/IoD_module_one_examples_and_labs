@@ -4,5 +4,5 @@ Institute of data, module one, examples and labs will be saved here and the stud
 
 -- WHAT STANDARDS TO FOLLOW
 
-1.) Create new folder - Folders are named using the pascal case eg. (example_one) and be all characters lowercase.
+1.) Create new folder - lowercase first word, capitalised second work eg. (thisFolder)
 2.) Create new file - all files that are COMPONENTS or HTML files will be upper case, Camelcase (ComponentOne).
